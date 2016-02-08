@@ -32,6 +32,7 @@
    * [Execution Context & Scope](variables,scope,and_memory/execution_environment_&_scope.md)
    * [Garbage Collection](variables,scope,and_memory/garbage_collection.md)
 * [Reference Types](reference_types/README.md)
+   * [Object Type](reference_types/object_type.md)
 * [OOP](object-oriented_programming/README.md)
 * [Functions Expression](functions_expression/README.md)
 * [BOM](the_browser_object_model/README.md)
