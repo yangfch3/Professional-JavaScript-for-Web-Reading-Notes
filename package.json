@@ -1,0 +1,26 @@
+{
+  "name": "book_notes",
+  "version": "1.0.0",
+  "description": "book_notes about HBS",
+  "main": "index.js",
+  "dependencies": {
+    "gitbook-plugin-codeblock-filename": "^0.0.7",
+    "gitbook-plugin-disqus": "0.0.2",
+    "gitbook-plugin-multipart": "^0.3.0",
+    "gitbook-plugin-quiz": "^0.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "commit": "sh commit.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yangfch3/Professional_JavaScript_for_Web_Reading_Notes.git"
+  },
+  "author": "'yangfch3' <'yangfch3@gmail.com'>",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/yangfch3/Professional_JavaScript_for_Web_Reading_Notes/issues"
+  },
+  "homepage": "https://github.com/yangfch3/Professional_JavaScript_for_Web_Reading_Notes#readme"
+}

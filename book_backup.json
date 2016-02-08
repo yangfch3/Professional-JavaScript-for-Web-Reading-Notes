@@ -1,0 +1,65 @@
+{
+    "author": "yangfch3 ",
+    "description": "Professional_JavaScript_for_Web_Reading_Notes!",
+    "extension": null,
+    "generator": "site",
+    "isbn": null,
+    "links": {
+        "sharing": {
+            "all": null,
+            "facebook": null,
+            "google": null,
+            "twitter": null,
+            "weibo": null
+        },
+        "sidebar": {
+            "yangfch3's github": "http://github.com/yangfch3"
+        }
+    },
+    "output": null,
+    "pdf": {
+        "fontSize": 12,
+        "footerTemplate": null,
+        "headerTemplate": null,
+        "margin": {
+            "bottom": 36,
+            "left": 62,
+            "right": 62,
+            "top": 36
+        },
+        "pageNumbers": false,
+        "paperSize": "a4"
+    },
+    "styles": {
+        "website": "styles/website.css",
+        "ebook": "styles/ebook.css",
+        "pdf": "styles/pdf.css",
+        "mobi": "styles/mobi.css",
+        "epub": "styles/epub.css"
+    },
+    "plugins": ["disqus","codeblock-filename","quiz"],
+    "pluginsConfig": {
+        "disqus": {
+            "shortName": "hbsNotes"
+        },
+        "quiz": {
+            "labels": {
+                "showCorrect"       : "Show correct answers",
+                "check"             : "Check",
+                "showExplanation"   : "Show explanation",
+                "explanationHeader" : "Explanation"
+            },
+            "text": {
+                "noChosen"    : "No answer is chosen",
+                "incomplete"  : "Some correct answers missing"
+            },
+            "buttons": {
+                "showCorrect"       : true,
+                "showExplanation"   : true
+            }
+        }
+    },
+    "title": "Professional_JavaScript_for_Web_Reading_Notes",
+    "variables": {},
+    "gitbook": ">=2.0.0"
+}

@@ -1,0 +1,14 @@
+/* CSS for website */
+body .page-inner{
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+body blockquote {
+    font-size: 14px !important;
+}
+
+code:not(.lang-javascript) {
+    color: #c7254e !important;
+}

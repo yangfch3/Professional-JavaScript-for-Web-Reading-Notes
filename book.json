@@ -1,0 +1,52 @@
+{
+    "author": "yangfch3 ",
+    "description": "Professional-JavaScript-for-Web-Reading-Notes!",
+    "extension": null,
+    "generator": "site",
+    "isbn": null,
+    "links": {
+        "sharing": {
+            "all": null,
+            "facebook": null,
+            "google": null,
+            "twitter": null,
+            "weibo": null
+        },
+        "sidebar": {
+            "yangfch3's github": "http://github.com/yangfch3"
+        }
+    },
+    "output": null,
+    "pdf": {
+        "fontSize": 12,
+        "footerTemplate": null,
+        "headerTemplate": null,
+        "margin": {
+            "bottom": 36,
+            "left": 62,
+            "right": 62,
+            "top": 36
+        },
+        "pageNumbers": false,
+        "paperSize": "a4"
+    },
+    "styles": {
+        "website": "./styles/website.css",
+        "ebook": "./styles/ebook.css",
+        "pdf": "./styles/pdf.css",
+        "mobi": "./styles/mobi.css",
+        "epub": "./styles/epub.css"
+    },
+    "plugins": ["disqus","codeblock-filename","customtheme"],
+    "pluginsConfig": {
+        "disqus": {
+            "shortName": "hbsNotes"
+        },
+        "customtheme": {
+            "css": ["custom/website.css"]
+        }
+    },
+    "title": "Professional-JavaScript-for-Web-Reading-Notes",
+    "variables": {},
+    "gitbook": ">=2.0.0"
+}
