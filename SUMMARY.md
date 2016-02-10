@@ -36,6 +36,7 @@
    * [Array Type(01)](reference_types/array_type.md)
    * [Array Type(02)](reference_types/array_type02.md)
    * [Array Type(03)](reference_types/array_type03.md)
+   * [Date Type](reference_types/date_type.md)
 * [OOP](object-oriented_programming/README.md)
 * [Functions Expression](functions_expression/README.md)
 * [BOM](the_browser_object_model/README.md)
