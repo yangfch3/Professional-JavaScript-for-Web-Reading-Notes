@@ -41,6 +41,7 @@
    * [Function Type 01](reference_types/function_type.md)
    * [Function Type 02](reference_types/function_type_02.md)
    * [Function Type 03](reference_types/function_type_03.md)
+   * [Primitive Wrapper Types](reference_types/primitive_wrapper_types.md)
 * [OOP](object-oriented_programming/README.md)
 * [Functions Expression](functions_expression/README.md)
 * [BOM](the_browser_object_model/README.md)

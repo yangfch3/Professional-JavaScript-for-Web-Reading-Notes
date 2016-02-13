@@ -206,7 +206,7 @@ pattern0.source; // '/[bc]at/gim'
 |leftContext|\$`|input 字符串中 lastMatch 之前的字符串|
 |rightContext|\$'|input 字符串中 lastMatch 之后的字符串|
 |multiline|$*|布尔值，表示是否所有表达式都使用多行模式|
-||\$1-9|存储|
+||\$nn|nn 为 01-99，存储第 nn 个捕获组的字符串|
 
 ```javascript
 var text1 = 'Hello World! Hello yangfch3!',
