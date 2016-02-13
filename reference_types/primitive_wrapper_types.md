@@ -73,7 +73,7 @@
 
 5. **最佳实践**：永远不要使用 `Boolean` 对象
 
-## Number
+## Number 类型
 * `valueOf()` 方法返回数值；
 `toString()` `toLocaleString()` 方法返回字符串；
 
@@ -270,6 +270,20 @@
         stringValue.localeCompare('yellow'); // 0
         stringValue.localeCompare('zoo'); // -1
         ```
+
+* `fromCharCode()` 方法
+    * 作用：接收任意多个字符编码，将它们转换成一个字符串
+
+    ```javascript
+    String.fromCharCode(104, 101, 108, 108, 111); // 'hello'
+    ```
+
+* HTML 方法
+
+    `anchor(name)`、`big()`、`bold()`、`fixed()`、`fontcolor(color)`、`fontsize(size)`、`italics()`、`link(url)`、`small()`、`strike()`、`sub()`、`sup()`
+    ```javascript
+    'str'.anchor('name'); // "<a name="name">str</a>"
+    ```
 
 
 
