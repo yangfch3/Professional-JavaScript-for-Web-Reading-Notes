@@ -56,6 +56,8 @@
    * [Node Basic Type](the_document_object_model/node_type.md)
    * [Document Type](the_document_object_model/document_type.md)
    * [Element Type](the_document_object_model/element_type.md)
+   * [Text Type](the_document_object_model/text_type.md)
+   * [Other Types](the_document_object_model/comment_type.md)
 * [DOM Extension](dom_extension/README.md)
 * [DOM Levels 2 and 3](dom_levels_2_and_3/README.md)
 * [Events](events/README.md)
