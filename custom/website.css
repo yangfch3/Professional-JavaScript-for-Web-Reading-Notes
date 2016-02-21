@@ -1,4 +1,13 @@
 /* CSS for website */
+@font-face {
+    font-family: 'monaco';
+    src: url('http://7xjg0a.com1.z0.glb.clouddn.com/fonts/FMonaco.eot');
+    src: url('http://7xjg0a.com1.z0.glb.clouddn.com/fonts/FMonaco.eot?#iefix') format('embedded-opentype'),
+    url('http://7xjg0a.com1.z0.glb.clouddn.com/fonts/FMonaco.woff') format('woff'),
+    url('http://7xjg0a.com1.z0.glb.clouddn.com/fonts/FMonaco.ttf') format('truetype'),
+    url('http://7xjg0a.com1.z0.glb.clouddn.com/fonts/FMonaco.svg#monaco') format('svg');
+}
+
 body .page-inner{
     font-family: Helvetica, Arial, sans-serif;
     font-size: 14px;
@@ -11,4 +20,8 @@ body blockquote {
 
 code:not(.lang-javascript) {
     color: #c7254e !important;
+}
+
+pre {
+    font-family: monaco !important;
 }
