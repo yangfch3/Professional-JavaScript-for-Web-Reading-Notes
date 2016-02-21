@@ -24,4 +24,5 @@ code:not(.lang-javascript) {
 
 pre {
     font-family: monaco !important;
+    letter-spacing: 0px;
 }
