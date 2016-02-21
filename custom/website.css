@@ -1,11 +1,11 @@
 /* CSS for website */
 @font-face {
     font-family: 'monaco';
-    src: url('http://7xjg0a.com1.z0.glb.clouddn.com/fonts/FMonaco.eot');
-    src: url('http://7xjg0a.com1.z0.glb.clouddn.com/fonts/FMonaco.eot?#iefix') format('embedded-opentype'),
-    url('http://7xjg0a.com1.z0.glb.clouddn.com/fonts/FMonaco.woff') format('woff'),
-    url('http://7xjg0a.com1.z0.glb.clouddn.com/fonts/FMonaco.ttf') format('truetype'),
-    url('http://7xjg0a.com1.z0.glb.clouddn.com/fonts/FMonaco.svg#monaco') format('svg');
+    src: url('http://7xjg0a.com1.z0.glb.clouddn.com/fonts/Monaco.eot');
+    src: url('http://7xjg0a.com1.z0.glb.clouddn.com/fonts/Monaco.eot?#iefix') format('embedded-opentype'),
+    url('http://7xjg0a.com1.z0.glb.clouddn.com/fonts/Monaco.woff') format('woff'),
+    url('http://7xjg0a.com1.z0.glb.clouddn.com/fonts/Monaco.ttf') format('truetype'),
+    url('http://7xjg0a.com1.z0.glb.clouddn.com/fonts/Monaco.svg#monaco') format('svg');
 }
 
 body .page-inner{
