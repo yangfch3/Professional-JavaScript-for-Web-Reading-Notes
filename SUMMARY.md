@@ -63,7 +63,7 @@
    * [Selectors API](dom_extension/selectors_api.md)
    * [Element Traversal](dom_extension/element_traversal.md)
    * [HTML5 Basic](dom_extension/html5_basic.md)
-   * [Proprietary Extensions](dom_extension/proprietary_extensions)
+   * [Proprietary Extensions](dom_extension/proprietary_extensions.md)
 * [DOM Levels 2 and 3](dom_levels_2_and_3/README.md)
 * [Events](events/README.md)
 * [Scripting Forms](scripting_forms/README.md)
