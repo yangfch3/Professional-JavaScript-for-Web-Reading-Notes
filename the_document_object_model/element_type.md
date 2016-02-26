@@ -165,3 +165,15 @@
         }
     }
     ```
+
+### 7. 元素尺寸与位置
+<span style="display:block; text-align:center">
+![client&outer.jpg-51.9kB][1]
+</span>
+
+<span style="display:block; text-align:center">
+![scroll.JPG-41.1kB][2]
+</span>
+
+  [1]: http://static.zybuluo.com/yangfch3/0arkpkfnxsu06vk3akwxq5m0/client&outer.jpg
+  [2]: http://static.zybuluo.com/yangfch3/gy5e83d28kvn6s4hg9jemvtb/scroll.JPG

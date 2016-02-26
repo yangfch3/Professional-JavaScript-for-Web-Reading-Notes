@@ -13,10 +13,10 @@
     var name = 'yangfch3';
     window.color = 'white';
 
-    delete window.name; // false 删除成功
+    delete window.name; // false 删除失败
     window.name; // undefined
 
-    delete window.color; // true 删除失败
+    delete window.color; // true 删除成功
     window.color; // 'white'
     ```
 
@@ -77,7 +77,7 @@
 2. DOM-body（相当于 body 宽高）
 
     `document.body.clientWidth`
-`document.body.clienyHeight`
+`document.body.clientHeight`
 3. DOM-HTML（相当于 HTML 宽高）
 
     `document.documentElement.clientWidth` `document.documentElement.clientWidth`
