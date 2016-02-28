@@ -139,7 +139,7 @@
     弹出窗口被滥用、恶意使用，影响用户体验，所有现代浏览器都对弹窗做了，**安全限制**
 
 3. 检测弹出窗口是否被屏蔽
-    * 原理：浏览器内置的屏蔽程序阻止弹出窗口会 `window.open()` 返回 `null`，浏览器插件等程序阻止的弹出窗口 `window.open()` 会返回一个 **错误**，通过检测返回值，`try-catch` 来捕捉错误
+    * 原理：浏览器内置的屏蔽程序阻止弹出窗口会 `window.open()` 返回 `null` 或者 `undefined`，浏览器插件等程序阻止的弹出窗口 `window.open()` 会返回一个 **错误**，通过检测返回值，`try-catch` 来捕捉错误
     ```javascript
     var blocked = false;
 
@@ -160,7 +160,7 @@
 4. 间歇调用和超时调用
     1. `JavaScript` 是单线程语言；
 
-    2. `setInterval()` `setTimeOut()` 是 window 的方法，随处可以调用，随处可以清除（使用 `clearInterval()`、`clearTimeOut()`）；
+    2. `setInterval()` `setTimeout()` 是 window 的方法，随处可以调用，随处可以清除（使用 `clearInterval()`、`clearTimeOut()`）；
 
     3. `setInterval()` `setTimeOut()` 第一个参数可以是包含 `JavaScript` 代码（语句）的字符串，也可以是一个函数；
 

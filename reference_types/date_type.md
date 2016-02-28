@@ -140,7 +140,7 @@
 * `set**()`;
 * `setUTC**()`;
 
-上面的 `**` 为 `Year` `Month` `Date` `Day` `Hours` `Minutes` `Seconds` `Milliseconds`
+上面的 `**` 为 `FullYear` `Month` `Date` `Day` `Hours` `Minutes` `Seconds` `Milliseconds`
 
 
 ```javascript
