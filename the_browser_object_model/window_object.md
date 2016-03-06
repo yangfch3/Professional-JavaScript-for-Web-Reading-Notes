@@ -95,7 +95,7 @@
 * `resizeby()` `resizeto()` 默认禁用只能在 `window.open()` 弹出的新窗口使用
 
 ### 导航和打开窗口
-`window.open()`：导航到一个特定的 URL，或者打开一个新的浏览器窗口，接收四个参数：
+`window.open()`：导航到一个特定的 URL，或者打开一个新的浏览器窗口（**只有参数一、二时打开的是新标签页**），接收四个参数：
 
 　　参数一：URL（或 URL 的部分） 字符串
 
@@ -157,7 +157,22 @@
     }
     ```
 
-4. 间歇调用和超时调用
+4. 父子窗口之间的通信：
+    * 父窗口可以使用 `window.open()` 的第二个参数（新窗口 name ）向子窗口传递自定义的数据
+    * 使用 `window.opener` 获取到父窗口 `window` 对象的引用
+    ```javascript
+    // parent window
+    var newWin = window.open('', 'user=yangfch3&age=21')
+
+    // child window
+    var data = window.name;
+    // ... processdate
+
+    // operate parent window use window.opener
+    window.opener.loaction.reload()
+    ```
+
+5. 间歇调用和超时调用
     1. `JavaScript` 是单线程语言；
 
     2. `setInterval()` `setTimeout()` 是 window 的方法，随处可以调用，随处可以清除（使用 `clearInterval()`、`clearTimeOut()`）；

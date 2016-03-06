@@ -65,6 +65,8 @@ doc.childNodes; // [<!DOCTYPE html>, <html>......</html>]
     document.domian = 'b.example.com'; // 'Uncaught DOMException: ...'
     ```
 
+5. [链接：使用 document.domain 实现跨父子域](https://www.zybuluo.com/yangfch3/note/288416#方案四documentdomain-跨子域)
+
 ### 3. 查找元素
 1. `getElementById()` 注意事项：
     * 传入参数对应的 ID 的元素不存在，返回 null

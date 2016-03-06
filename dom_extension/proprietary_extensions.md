@@ -31,6 +31,8 @@ function setInnerText(element, text) {
 ```
 
 ## 滚动相关
+* `scrollIntoView()` 对元素调用此方法可以使页面滚动到元素顶部平齐；
+
 * `scrollIntoViewIfNeeded(alignCenter)` 调用方法的元素不可见的情况下运行，接受**一个参数：是否垂直居中布尔值**
 
 * `scrollByLines(lineCount)` 将元素内容滚动到指定的行高
