@@ -8,3 +8,10 @@ JavaScript 与 HTML 之间的交互是通过事件实现的。
 `DOM 2` 级规范开始规范标准化 `DOM` 事件，`IE 8` 是最后一个仍然使用其专有事件系统的浏览器。
 
 除了 `DOM` 事件，还有 `BOM` 事件，`HTML 5` 致力于规范 `BOM` 事件。
+
+**所有事件：**
+
+[![2016-03-09_231011.jpg-94.8kB][1]](http://static.zybuluo.com/yangfch3/2w9h5rxckbk7i1ysjlul7b41/2016-03-09_231011.jpg)
+
+
+  [1]: http://static.zybuluo.com/yangfch3/2w9h5rxckbk7i1ysjlul7b41/2016-03-09_231011.jpg
