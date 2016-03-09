@@ -82,7 +82,7 @@
        * [Focus Events](events/focusing_events.md)
        * [Mouse and Wheel Events](events/mouses_and_wheel_events.md)
        * [Keyboard and Text Events](events/keyboard_and_text_events.md)
-       * [Composition Event](events/composition_event)
+       * [Composition Event](events/composition_event.md)
        * [Mutation Events](events/mutation_events)
        * [HTML5 Events](events/html5_events)
        * [Device Events](events/device_events)
