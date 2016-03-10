@@ -86,6 +86,7 @@
        * [Mutation Events](events/mutation_events.md)
        * [HTML5 Events](events/html5_events.md)
        * [Device Events](events/device_events)
+       * [Touch and Guesture Events](events\touch_and_guesture_events)
    * [Memory and Performance](events/memory_and_performance.md)
    * [Simulating Events](events/simulating_events)
 * [Scripting Forms](scripting_forms/README.md)

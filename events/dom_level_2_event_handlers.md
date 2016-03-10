@@ -29,4 +29,18 @@ btn.removeEventListener('click', process, false);
 
 10. 将第三个参数设置为 `false` 是为了最大限度地兼容各个浏览器，**除非需要在事件到达目标之前截获它的，才将第三个参数设置为 `true`**；
 
-11. IE 9 及以上支持。
+11. IE 9 及以上支持；
+
+12. 技巧：当事件处理函数是匿名函数时如何移除事件处理程序 -- 使用 arguments.callee 指向当前函数本身来移除事件处理函数
+    ```javascript
+    var clickNumber = 0;
+
+    window.addEventListener('click', function() {
+        if (clickNumber == 1) {
+            window.removeEventListener('click', arguments.callee, false)
+        } else {
+            alert('clicked!');
+            clickNumber = 1;
+        }
+    }, false)
+    ```
