@@ -88,7 +88,7 @@
        * [Device Events](events/device_events.md)
        * [Touch and Guesture Events](events/touch_and_guesture_events.md)
    * [Memory and Performance](events/memory_and_performance.md)
-   * [Simulating Events](events/simulating_events)
+   * [Simulating Events](events/simulating_events.md)
 * [Scripting Forms](scripting_forms/README.md)
 * [Using Canvas](html5_canvas_and_js/README.md)
 * [HTML5 New Feature and JS](html5_new_feature_and_js/README.md)
