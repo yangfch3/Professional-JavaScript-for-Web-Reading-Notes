@@ -250,3 +250,7 @@ RegExp.$2; // ""
     * 单行模式，无间隔匹配模式
     * 条件匹配
     * 正则表达式注释
+
+## 参考链接
+* [正则表达式初步](https://www.zybuluo.com/yangfch3/note/311585)
+* [常用正则表达式](https://www.zybuluo.com/yangfch3/note/312031)
