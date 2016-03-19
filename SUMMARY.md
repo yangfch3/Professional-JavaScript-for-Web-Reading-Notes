@@ -104,7 +104,7 @@
    * [XMLHttpRequest Level 2](ajax_and_cross_origin/xmlhttprequest_level_2.md)
    * [Progress Event](ajax_and_cross_origin/progress_event.md)
    * [CORS](ajax_and_cross_origin/cors.md)
-   * [Other CROS Skill](ajax_and_cross_origin/other_cros_skill)
+   * [Other CROS Skill](ajax_and_cross_origin/other_cros_skill.md)
    * [Comet](ajax_and_cross_origin/comet)
 * [Advanced Techniques](advanced_techniques/README.md)
 * [Offline Application and Client-Side Storage](offline_application_and_client-side_storage/README.md)
