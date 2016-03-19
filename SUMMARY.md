@@ -106,6 +106,7 @@
    * [CORS](ajax_and_cross_origin/cors.md)
    * [Other CROS Skill](ajax_and_cross_origin/other_cros_skill.md)
    * [Comet](ajax_and_cross_origin/comet.md)
+   * [Security](ajax_and_cross_origin/security.md)
 * [Advanced Techniques](advanced_techniques/README.md)
 * [Offline Application and Client-Side Storage](offline_application_and_client-side_storage/README.md)
 * [Best Practices](best_practices/README.md)
