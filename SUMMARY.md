@@ -92,6 +92,7 @@
 * [Scripting Forms](scripting_forms/README.md)
    * [Form basic](scripting_forms/form_basic.md)
    * [Textbox script](scripting_forms/textbox_script.md)
+   * [Serialize Form](scripting_forms/serialize_form.md)
 * [Using Canvas](html5_canvas_and_js/README.md)
 * [HTML5 New Feature and JS](html5_new_feature_and_js/README.md)
 * [Error Handling and Debugging](error_handling_and_debugging/README.md)
