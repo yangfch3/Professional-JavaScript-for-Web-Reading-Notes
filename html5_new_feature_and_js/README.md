@@ -1,1 +1,2 @@
-# HTML5 New Feature and JS
+## HTML 5 脚本编程
+`HTML 5` 规范与定义了许多 `API`，大大简化与方便了我们 `Web` 构建工作。
