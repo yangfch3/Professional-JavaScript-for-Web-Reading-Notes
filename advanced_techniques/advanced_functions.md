@@ -136,3 +136,130 @@
     ```
 
 5. 多个程序员在同一个页面上编码时，作用域安全便有用了。
+
+## 惰性载入函数
+1. 因为浏览器的差异，我们常常需要包含大量的 `if` 语句做兼容，如果每次运行一个函数，都需要检测 `if` 中的条件，这无疑对资源造成了浪费。
+
+    有没有办法让我们 **不必每次都运行 `if` 语句**，只需要第一次运行后记下分支的正确走向，之后就可以避开判断了呢？
+
+2. 惰性载入：函数执行的分支只会仅会发生一次，实现方式：
+    1. 函数在第一次调用时，内部再处理（重写）函数 -- 第一次调用惰性判断
+    2. 在声明函数的时候就根据分支条件指定适当的函数 -- 代码首次加载时惰性判断
+
+3. 方法一：
+    ```javascript
+    function process() {
+        if (...) {
+            process = function() {
+                ... // 重写 process 函数
+            }
+        } else {
+            process = function() {
+                ... // 重写 process 函数
+            }
+        }
+    }
+    ```
+
+4. 方法二：
+    ```javascript
+    var process = (function() {
+        if (...) {
+            return function() {...}
+        } else {
+            return function() {...}
+        }
+    })();
+    ```
+
+5. 惰性载入函数的优点是：只在第一次执行分支代码时牺牲一点儿性能，之后便可以避免执行不必要的代码。
+
+## 函数绑定
+1. 函数绑定是创建一个函数，可以在特定的 `this` 环境中指定参数调用另一个函数；
+
+2. 函数绑定的技巧常常和回调函数与事件处理程序一起使用，用以确保函数执行时的执行环境；
+
+3. 执行环境对函数执行的影响
+    ```javascript
+    var handler = {
+        message: 'Event handled',
+        handleClick: function(event) {
+            alert(this.message);
+        }
+    }
+
+    var btn = document.getElementById('myBtn');
+
+    eventUtil.addEventHandler(btn, 'click', handler.handleClick);
+    // undefined
+   ```
+   > `handler.handleClick` 指针指向一个函数，普通执行（不作为对象的一个方法）时 `this` 指向 `btn`，而不是 `handler` 对象
+
+4. 保存（还原）执行环境的方法：闭包保存执行环境
+    ```javascript
+    var handler = {
+        message: 'Event handled',
+        handleClick: function(event) {
+            alert(this.message);
+        }
+    }
+
+    var btn = document.getElementById('myBtn');
+
+    eventUtil.addEventHandler(btn, 'click', function(event) {
+        handler.handleClick(event);
+    });
+    // 'Event handled'
+    ```
+    > 此处，函数是作为 handler 方法调用的，`this` 指向 `handler` 对象
+
+5. `bind` 函数
+    ```javascript
+    function bind(fn, context) {
+        return function() {
+            return fn.apply(context, arguments);
+        }
+    }
+    ```
+    > 在 `bind` 函数内创建一个闭包，闭包内使用 `apply` 调用传入的函数，并 `apply` 传入的上下文和参数
+
+6. `bind` 函数使用实例
+    ```javascript
+    var handler = {
+        message: 'Event handled',
+        handleClick: function(event) {
+            alert(this.message);
+        }
+    }
+
+    var btn = document.getElementById('myBtn');
+
+    eventUtil.addEventHandler(btn, 'click', bind(handler.handleclick, handler));
+    ```
+
+7. ES 5 为所有的函数实例新增了 `bind` 方法，与上面定义的 `bind` 函数类似，返回的是一个 **已经绑定好执行环境的函数**
+    ```javascript
+    var handler = {
+        message: 'Event handled',
+        handleClick: function(event) {
+            alert(this.message);
+        }
+    }
+
+    var btn = document.getElementById('myBtn');
+
+    eventUtil.addEventHandler(btn, 'click', handler.handleclick.bind(handler));
+    ```
+
+8. 兼容的 `bind` 函数
+    ```javascript
+    function bind(fn, context) {
+        return function() {
+            if (fn.bind) {
+                return fn.bind(context);
+            } else {
+                return fn.apply(context, arguments);
+            }
+        }
+    }
+    ```
