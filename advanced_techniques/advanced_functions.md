@@ -263,3 +263,60 @@
         }
     }
     ```
+
+## 函数柯里化
+1. function currying；
+
+2. 用于创建已经设置好一个或多个参数的函数；
+    >技巧：使用闭包返回一个函数
+调用柯里化函数（方法时）为它传入要柯里化的函数和必要参数，返回的是已经配置好初始参数的函数的柯里化版本。
+
+3. 代码：绑定了执行环境的柯里化函数
+    ```javascript
+    function curry(fn) {
+        var args = Array.prototype.slice.call(arguments, 1);
+
+        return function() {
+            var innerArgs = Array.prototype.slice.call(arguments);
+            var finalArgs = args.concat(innerArgs);
+            return fn.apply(null, finalArgs)
+        }
+    }
+    ```
+
+4. 使用实例
+    ```javascript
+    function add(num1, num2) {
+        return num1 + num2;
+    }
+
+    var curriedAdd = curry(add, 5); // 传入待柯里化的函数以及默认参数
+    curriedAdd(3); // 8
+    ```
+
+5. 在柯里化的同时为函数绑定好执行环境
+    ```javascript
+    function curry(fn, context) {
+        var args = Array.prototype.slice.call(arguments, 2);
+
+        return function() {
+            var innerArgs = Array.prototype.slice.call(arguments);
+            var finalArgs = args.concat(innerArgs);
+            return fn.apply(context, finalArgs)
+        }
+    }
+
+    // 使用实例
+    function add(num1, num2) {
+        return num1 + num2;
+    }
+
+    var curriedAdd = curry(add, null, 5); // 传入待柯里化的函数、执行环境以及默认参数
+    curriedAdd(3); // 8
+    ```
+
+6. ES 5 的 `bind` 方法也可以实现函数的柯里化：`bind` 方法可以新建一个函数，第一个参数执行新函数的执行环境，之后的参数列表是函数的默认参数
+    ```javascript
+    // fn.bind(context, args+)
+
+    ```
