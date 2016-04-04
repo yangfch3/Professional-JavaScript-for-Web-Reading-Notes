@@ -120,7 +120,7 @@
    * [Advanced Functions](advanced_techniques/advanced_functions.md)
    * [Prevent tampering objects](advanced_techniques/prevent_tampering_objects.md)
    * [Advanced Timer](advanced_techniques/advanced_timer.md)
-   * [Custom Event](advanced_techniques/custom_event)
+   * [Custom Event](advanced_techniques/custom_event.md)
    * [Drag and Drop](advanced_techniques/drag_and_drop)
 * [Offline Application and Client-Side Storage](offline_application_and_client-side_storage/README.md)
 * [Best Practices](best_practices/README.md)
