@@ -1,4 +1,4 @@
-、# HTML 事件处理程序
+# HTML 事件处理程序
 1. 某个元素支持的所有事件都可以使用一个与相应事件处理程序同名的 `HTML` 特性来指定；
     ```HTML
     <input type="button" value="click me" onclick="alert('Clicked')" />
