@@ -121,7 +121,7 @@
    * [Prevent tampering objects](advanced_techniques/prevent_tampering_objects.md)
    * [Advanced Timer](advanced_techniques/advanced_timer.md)
    * [Custom Event](advanced_techniques/custom_event.md)
-   * [Drag and Drop](advanced_techniques/drag_and_drop)
+   * [Drag and Drop](advanced_techniques/drag_and_drop.md)
 * [Offline Application and Client-Side Storage](offline_application_and_client-side_storage/README.md)
 * [Best Practices](best_practices/README.md)
 * [Upcoming APIs](upcoming_apis/README.md)
