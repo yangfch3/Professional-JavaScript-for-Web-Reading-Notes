@@ -1,10 +1,13 @@
-# OOP
-两份示例：
+# 面向对象的程序设计
+1. OO，Object-Oriented，面向对象；
 
-[create_object_pattern.js-2.9kB][1]
+2. 面向对象的语言有一个标志：都有类的概念，通过类可以创建任意个具有相同属性和方法的对象；
 
-[Inheritage.js-3.8kB][2]
+3. `ES` 中没有类的概念，它的对象与基于类的语言中的对象有所不同；
 
+4. 对象的定义：一组没有特定顺序的值
+    >**无序** **属性** 的 **集合**，其属性可以包含基本值或引用类型实例
 
-  [1]: http://static.zybuluo.com/yangfch3/91opj22qdr3t70i6y2qwclz0/create_object_pattern.js
-  [2]: http://static.zybuluo.com/yangfch3/zbjdbbuto5tpm2x96ht93zgm/Inheritage.js
+5. 可以把对象想象为 **散列表**，由名值对构成；
+
+6. 每个对象都基于引用类型创建，可以是 **原生的引用类型**，也可以是 **开发人员定义的类型**。
