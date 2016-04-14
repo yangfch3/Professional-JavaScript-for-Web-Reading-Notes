@@ -59,7 +59,7 @@
    * [Inheritance](object-oriented_programming/inheritance.md)
        * [Prototype Chaining](object-oriented_programming/prototype_chaining.md)
        * [Constructor Stealing](object-oriented_programming/constructor_stealing.md)
-       * [Combination Inheritance](object-oriented_programming/combination_inheritance)
+       * [Combination Inheritance](object-oriented_programming/combination_inheritance.md)
        * [Prototypal Inheritance](object-oriented_programming/prototypal_inheritance)
        * [Parasitic Combination Inheritance](object-oriented_programming/parasitic_combination_inheritance)
 * [Functions Expression](functions_expression/README.md)
