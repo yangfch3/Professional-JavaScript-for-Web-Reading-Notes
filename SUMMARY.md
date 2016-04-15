@@ -63,6 +63,7 @@
        * [Prototypal Inheritance](object-oriented_programming/prototypal_inheritance.md)
        * [Parasitic Inheritance](object-oriented_programming/parasitic_inheritance.md)
        * [Parasitic Combination Inheritance](object-oriented_programming/parasitic_combination_inheritance.md)
+   * [Summary](object-oriented_programming/summary.md)
 * [Functions Expression](functions_expression/README.md)
    * [Recursion](functions_expression/recursion)
    * [Closures](functions_expression/closures)
