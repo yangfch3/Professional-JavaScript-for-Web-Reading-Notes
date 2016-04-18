@@ -161,7 +161,7 @@
    * [Application Cache](offline_application_and_client-side_storage/application_cache)
    * [Data Storage](offline_application_and_client-side_storage/data_storage)
 * [Best Practices](best_practices/README.md)
-   * [Maintainability](best_practices/maintainability)
+   * [Maintainability](best_practices/maintainability.md)
    * [Performance](best_practices/performance)
    * [Deployment](best_practices/deployment)
 * [Upcoming APIs](upcoming_apis/README.md)
