@@ -163,7 +163,7 @@
 * [Best Practices](best_practices/README.md)
    * [Maintainability](best_practices/maintainability.md)
    * [Performance](best_practices/performance.md)
-   * [Deployment](best_practices/deployment)
+   * [Deployment](best_practices/deployment.md)
 * [Upcoming APIs](upcoming_apis/README.md)
    * [RequestAnimationFrame](upcoming_apis/requestanimationframe)
    * [Page Visibility API](upcoming_apis/page_visibility_api)
