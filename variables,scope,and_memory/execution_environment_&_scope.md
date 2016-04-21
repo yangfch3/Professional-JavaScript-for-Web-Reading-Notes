@@ -117,4 +117,13 @@
 
 10. 变量搜索要付出性能代价，访问局部变量比访问全局变量要快；随着 `JavaScript` 引擎的优化，这个差别已经很小；
 
+---
+>弄清楚这些概念：
+
+>![2016-04-21_125250.jpg-32.5kB][2]
+
+
+  [2]: http://static.zybuluo.com/yangfch3/veakftc7bxzwn5ycg61la4u1/2016-04-21_125250.jpg
+
+
   [1]: http://static.zybuluo.com/yangfch3/1wz39jjosri2tur0sh1wd3nj/2016-02-07_152019.jpg
