@@ -68,7 +68,7 @@
    * [Recursion](functions_expression/recursion.md)
    * [Closures](functions_expression/closures.md)
    * [Mimicking Block Scope](functions_expression/mimicking_block_scope.md)
-   * [Private Variables](functions_expression/private_variables)
+   * [Private Variables](functions_expression/private_variables.md)
 * [BOM](the_browser_object_model/README.md)
    * [window object](the_browser_object_model/window_object.md)
    * [location object](the_browser_object_model/location_object.md)
