@@ -1,1 +1,8 @@
-# HTML5 Canvas and JS
+# 使用 canvas 绘图
+1. `canvas` 元素负责在页面中设定一个区域，然后就可以通过 `JavaScript` 动态地在这个区域中绘制图形；
+
+2. `canvas` 对象具备基本绘图能力的 2D 上下文；
+
+3. `canvas` 还有 `WebGL` 3D 上下文；
+
+4. 在一些老版本的操作系统，例如 `XP`，缺少必要的绘图驱动程序。
