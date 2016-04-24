@@ -120,7 +120,7 @@
    * [Form Serialization](scripting_forms/serialize_form.md)
    * [Rich Text Editing](scripting_forms/rich_text_editing.md)
 * [Graphics With Canvas](html5_canvas_and_js/README.md)
-   * [Basic Usage](html5_canvas_and_js/basic_usage)
+   * [Basic Usage](html5_canvas_and_js/basic_usage.md)
    * [The 2D Context](html5_canvas_and_js/the_2d_context)
    * [WebGL](html5_canvas_and_js/webgl)
 * [HTML5 New Feature and JS](html5_new_feature_and_js/README.md)
