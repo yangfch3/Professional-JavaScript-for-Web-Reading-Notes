@@ -1,4 +1,6 @@
 # 基本用法
+`canvas.getContext()` `toDataURL()`
+
 1. `<canvas>` 标签的 `width` 和 `height` 特性指定绘图区域大小；
     > 也可以通过 CSS 样式指定宽高。
 
