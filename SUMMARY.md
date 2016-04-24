@@ -124,7 +124,7 @@
    * [The 2D Context](html5_canvas_and_js/the_2d_context.md)
        * [Fills and Strokes](html5_canvas_and_js/fills_and_strokes.md)
        * [Drawing Rectangles](html5_canvas_and_js/drawing_rectangles.md)
-       * [Drawing Paths](html5_canvas_and_js/drawing_paths)
+       * [Drawing Paths](html5_canvas_and_js/drawing_paths.md)
        * [Drawing Text](html5_canvas_and_js/drawing_text)
        * [Transformations](html5_canvas_and_js/transformations)
        * [Drawing Images](html5_canvas_and_js/drawing_images)

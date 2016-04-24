@@ -4,3 +4,7 @@
 2. 可以使用 2D 上下文对图片数据进行处理；
 
 3. 2D 上下文的坐标开始于 `<canvas>` 元素的左上角，原点坐标 **(0, 0)**，`width` 和 `height` 特性即为水平与垂直方向上的可用像素数目。
+
+
+---
+![2016-04-24_144943.jpg-130.4kB](http://static.zybuluo.com/yangfch3/ze94rxgrnzwx4eg276v0lwkk/2016-04-24_144943.jpg)
