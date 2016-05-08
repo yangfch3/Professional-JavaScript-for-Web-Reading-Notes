@@ -112,3 +112,6 @@
     ```
 
 11. 在不支持 `Object.defineProperty()` 方法的浏览器中不能修改 `[[Configurable]]` `Enumerable`。
+
+
+![configurable and writable](http://img.mukewang.com/5719f3ca0001520312800720.jpg)

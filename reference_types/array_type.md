@@ -163,3 +163,9 @@
 6. 同时使用 `unshift()` 和 `pop()` 方法可以从相反的方向来模拟队列：**即在数组的前端添加项，数组末端移除项**；
 
     > `IE7` 及更早版本对 `unshift()` 方法的处理有偏差：总是返回 `undefined` 而不是数组的新长度
+
+7. `delete` 操作对数组也是有效的，`in` 操作也能作用于数组
+    ```javascript
+    delete arr[index];
+    index in arr; // => false
+    ```
