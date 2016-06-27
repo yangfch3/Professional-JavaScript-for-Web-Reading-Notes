@@ -1,4 +1,6 @@
 # 历史状态管理
+辅助阅读链接：[使用 HTML5 History 新特性增强 Ajax 的体验](http://kayosite.com/html5-history-improve-ajax.html)
+
 历史状态管理一直是现代 `Web` 应用中的难点，用户的每次操作不一定会打开一个新的页面（尤其是 `Ajax` 型单页面应用），导致用户很难在 **不同的状态间** 切换。
 
 如何解决以上痛点？

@@ -22,6 +22,7 @@
 4. `HTMLFormElement` 扩展的独有方法
     * `reset()`
     * `submit()`
+    * `checkValidity()`
 
 5. 获取（引用）表单元素的方式
     1. `getElementById()`
