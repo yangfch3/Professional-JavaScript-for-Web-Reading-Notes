@@ -36,7 +36,7 @@
     ```javascript
     // 实现子、超类型继承函数封装
     function inheritPrototype(SubType, SuperType) {
-        var prototype = Object(SuperType);
+        var prototype = Object.create(SuperType);
         prototype.constructor = SubType;
         SubType.prototype = prototype;
     }
