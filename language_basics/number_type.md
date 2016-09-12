@@ -101,3 +101,5 @@
     1. 字符串第一个小数点有效，之后的小数点无效；`var a = parseFloat(' 00123.456.789'); // 123.456`；
     2. `parseFloat()` 只将字符串作为十进制解析；`var b = parseFloat('0xAF'); // 0`；
     3. `parseFloat()` 没有第二个可选参数。
+
+24. `Number.isInteger(arg);` 用于检测一个数（arg）是否为整数

@@ -69,6 +69,8 @@
    * [Closures](functions_expression/closures.md)
    * [Mimicking Block Scope](functions_expression/mimicking_block_scope.md)
    * [Private Variables](functions_expression/private_variables.md)
+       * [Static private variable & oop](functions_expression/static_private_variable.md)
+       * [module pattern and singleton](functions_expression/module_pattern_and_singleton.md)
 * [BOM](the_browser_object_model/README.md)
    * [window object](the_browser_object_model/window_object.md)
    * [location object](the_browser_object_model/location_object.md)
