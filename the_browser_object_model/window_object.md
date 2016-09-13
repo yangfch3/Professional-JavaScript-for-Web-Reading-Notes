@@ -81,11 +81,12 @@
 3. DOM-HTML（相当于 HTML 宽高）
 
     `document.documentElement.clientWidth` `document.documentElement.clientWidth`
-`document.documentElement.clientTop`
-`document.documentElement.clientLeft`
+
 4. 调整窗口大小
 
     `resizeto(widthnum, heightnum)` `resizeby(widthnum, heightnum)`
+
+5. 更多关于元素各个尺寸的介绍见 [10.3](https://yangfch3.gitbooks.io/professional-javascript-for-web-reading-notes/content/the_document_object_model/element_type.html)
 
 点击查看大图：
 [![2016-02-14_124751.jpg-244.8kB][1]](http://static.zybuluo.com/yangfch3/pd662u71rdtrw676zxugyebj/2016-02-14_124751.jpg)
