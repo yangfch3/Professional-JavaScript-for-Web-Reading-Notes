@@ -167,6 +167,12 @@
     ```
 
 ### 7. 元素尺寸与位置
+
+> 关于滚动条：
+>
+> 页面的滚动条是属于 html 元素的，而不是 body 元素的
+> 滚动条的宽度是 包含在元素的宽度里面的
+
 <span style="display:block; text-align:center">
 ![client&outer.jpg-51.9kB][1]
 </span>
