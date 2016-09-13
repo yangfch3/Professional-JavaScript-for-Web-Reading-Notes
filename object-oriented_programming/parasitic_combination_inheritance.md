@@ -1,3 +1,5 @@
+```
+```
 # 寄生组合式继承
 1. 组合继承的不足之处
     > 无论什么情况下，都会调用两次超类型构造函数；第一次是在 **子类型构造函数** 中，调用 **超类型构造函数** 以继承超类型部分属性；第二次是调用 **超类型构造函数** 创建超类型实例，并改写 **子类型构造函数** 的 `prototype` 指向超类型实例。
@@ -36,7 +38,7 @@
     ```javascript
     // 实现子、超类型继承函数封装
     function inheritPrototype(SubType, SuperType) {
-        var prototype = Object(SuperType);
+        var prototype = Object(SuperType.prototype);
         prototype.constructor = SubType;
         SubType.prototype = prototype;
     }
