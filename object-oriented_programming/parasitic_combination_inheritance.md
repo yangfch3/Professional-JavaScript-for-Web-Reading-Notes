@@ -37,10 +37,18 @@
 4. 寄生组合式继承代码实例
     ```javascript
     // 实现子、超类型继承函数封装
-    function inheritPrototype(SubType, SuperType) {
-        var prototype = Object(SuperType.prototype);
-        prototype.constructor = SubType;
-        SubType.prototype = prototype;
+    function inheritPrototype(subType, superType) {
+    	if (Object.create) {
+    		// 利用 Object.create 的特性实现，简单快捷
+    		subType.prototype = Object.create(superType.prototype);
+    		subType.prototype.constructor = subType;
+    	} else {
+    	    function F() {}
+    	    F.prototype = superType.prototype;
+    	    var prototype = new F();
+    	    prototype.constructor = subType;
+    	    subType.prototype = prototype;
+    	}
     }
 
     function SuperType(name) {
@@ -71,7 +79,7 @@
 6. **寄生组合式继承** 的优点
     * 高效：只调用了一次 `SuperType` 构造函数（相对于单纯的 **组合继承**）
     * 避免了在 `SubType.prototype` 上创建不必要、多余的属性
-    * 原型链得到了很好的保持
+    * 原型链同样得到了很好的保持
 
 7. **寄生式组合继承是最理想的继承范式**。
 
