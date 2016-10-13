@@ -16,7 +16,7 @@
     ```javascript
     var a = "Hello";
     var b = Boolean(a); // b ---> true
-    b === false; // true
+    b === true; // true
     typeof b; // 'boolean'
     ```
 
