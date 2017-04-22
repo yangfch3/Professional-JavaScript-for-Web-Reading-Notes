@@ -1,1 +1,7 @@
-# Offline Application and Client-Side Storage
+# 离线应用于客户端存储
+
+开发离线 Web 应用需要几个步骤：
+
+1. 应用需要知晓设备能否上网
+2. 应用必须能访问一定的资源（图像、CSS、JavaScript）
+3. 必须有一块本地空间用于保存数据，无论能否上网都不妨碍读写
