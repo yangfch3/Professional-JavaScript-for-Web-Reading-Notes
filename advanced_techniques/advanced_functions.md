@@ -264,16 +264,16 @@
     }
     ```
 
-## 函数柯里化
-1. function currying；
+## 偏函数
+1. partial function
 
 2. 用于创建已经设置好一个或多个参数的函数；
     >技巧：使用闭包返回一个函数
-调用柯里化函数（方法时）为它传入要柯里化的函数和必要参数，返回的是已经配置好初始参数的函数的柯里化版本。
+调用偏函数（方法时）为它传入要局部缓存的函数和必要参数，返回的是已经配置好初始参数的函数的偏函数版本。
 
-3. 代码：绑定了执行环境的柯里化函数
+3. 代码：绑定了执行环境的偏函数
     ```javascript
-    function curry(fn) {
+    function partial(fn) {
         var args = Array.prototype.slice.call(arguments, 1);
 
         return function() {
@@ -290,13 +290,13 @@
         return num1 + num2;
     }
 
-    var curriedAdd = curry(add, 5); // 传入待柯里化的函数以及默认参数
+    var partialAdd = partial(add, 5); // 传入待偏化的函数以及默认参数
     curriedAdd(3); // 8
     ```
 
-5. 在柯里化的同时为函数绑定好执行环境
+5. 在偏函数化的同时为函数绑定好执行环境
     ```javascript
-    function curry(fn, context) {
+    function partial(fn, context) {
         var args = Array.prototype.slice.call(arguments, 2);
 
         return function() {
@@ -311,12 +311,67 @@
         return num1 + num2;
     }
 
-    var curriedAdd = curry(add, null, 5); // 传入待柯里化的函数、执行环境以及默认参数
-    curriedAdd(3); // 8
+    var partialAdd = partial(add, null, 5); // 传入待偏化的函数、执行环境以及默认参数
+    partialAdd(3); // 8
     ```
 
-6. ES 5 的 `bind` 方法也可以实现函数的柯里化：`bind` 方法可以新建一个函数，第一个参数执行新函数的执行环境，之后的参数列表是函数的默认参数
+6. ES 5 的 `bind` 方法也是一个偏函数：`bind` 方法可以新建一个函数，第一个参数执行新函数的执行环境，之后的参数列表是函数的默认参数
     ```javascript
     // fn.bind(context, args+)
 
     ```
+
+## 柯里化
+1. partial function
+
+2. 与偏函数的区别
+    1. 偏函数：fn(x, y, z) ----> partialFn = partial(fn, x) -----> partialFn(y, z)
+    2. 柯里化：fn(x, y, z) ----> curriedFn = curry(fn) ------> curriedFn(x)(y)(z)/curriedFn(x)(y, z)/curriedFn(x, y)(z)
+
+3. 加强版柯里化示例
+    ```javascript
+    const _ = {}
+    function crazyCurryingHelper(fn, length, args, holes) {
+        length = length || fn.length    // 第一遍是fn所需的参数个数，以后是
+        args = args || []
+        holes = holes || []
+        
+        return function(...rest) {
+            let _args = args.slice(),
+                _holes = holes.slice(),
+                argLength = _args.length,        // 存储接收到的args和holes的长度
+                holeLength = _holes.length,
+                arg, i = 0
+            for (; i < rest.length; i++) {
+                arg = rest[i]
+                if (arg === _ && holeLength) {
+                    holeLength--                      // 循环_holes的位置
+                    _holes.push(_holes.shift())      // _holes最后一个移到第一个
+                } else if (arg === _) {
+                    _holes.push(argLength + i)          // 存储_hole就是_的位置
+                } else if (holeLength) {              // 是否还有没有填补的hole
+                    holeLength--
+                    _args.splice(_holes.shift(), 0, arg)           // 在参数列表指定hole的地方插入当前参数
+                } else {
+                    _args.push(arg)            // 不需要填补hole,直接添加到参数列表里面
+                }
+            }
+            
+            return _args.length >= length                          // 递归的进行柯里化
+                ? fn.apply(this, _args)
+                : crazyCurryingHelper.call(this, fn, length, _args, _holes)
+        }
+    }
+
+    function sayHello(name, age, fruit) { console.log(`我叫 ${name},我 ${age} 岁了, 我喜欢吃 ${fruit}`) }
+
+    // _ 用于参数占位
+    const betterShowMsg = crazyCurryingHelper(sayHello)
+    betterShowMsg(_, 20)('小衰', _, '西瓜')          // 我叫 小衰,我 20 岁了, 我喜欢吃 西瓜
+    betterShowMsg(_, _, '南瓜')('小猪')(25)          // 我叫 小猪,我 25 岁了, 我喜欢吃 南瓜
+    betterShowMsg('小明')(_, 22)(_, _, '倭瓜')          // 我叫 小明,我 22 岁了, 我喜欢吃 倭瓜
+    betterShowMsg('小拽')(28)('冬瓜')          // 我叫 小拽,我 28 岁了, 我喜欢吃 冬瓜
+    ```
+
+
+
